@@ -1,0 +1,1 @@
+weather_key = "5136ab9ca4a2e70786dcf724a6f2d978"
