@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Weather Analysis Visualizations (HTML Challenge)</title>
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Background Color -->
+<body style="background-color:whitesmoke">
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html">
+                <span class="navbar-color">Latitude</span>
+                </a>
+        </div>    
+            
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown-menu"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="max_temp.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="wind_speed.html">Wind Speed</a></li> 
+                  </ul>  
+                </li>
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>                                           
+            </div>
+        </div>
+    </nav>
+
+    <div class = "container" >
+        
+        <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <h2>Summary: Latitude vs. X</h2>
+                    <hr>
+                    <img src="../Resources/Images/Figure1.png" height="300" width="350" align="left" alt="first image" >
+                    <p class="p1">The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                        <p class= "p1">After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations 
+                                    created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.
+                        </p>
+                        <br>
+                </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                    <div class="panel-body">                                    
+                        <h2>Visualizations</h2>
+                        <hr>
+
+                        <div class="row" >
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="max_temp.html"><img class = "img img-responsive" src="Resources\assets\images\Fig1.png" style="width:100%" alt=""></a></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="Resources\assets\images\Fig2.png" style="width:100%" alt=""></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Resources\assets\images\Fig3.png" style="width:100%" alt=""></a></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img img-responsive" src="Resources\assets\images\Fig4.png" style="width:100%" alt=""></a></div>
+                        </div>
+                            
+                    </div>
+            </div>     
+        </div>    
+    </div>
+</body>
+</html>
